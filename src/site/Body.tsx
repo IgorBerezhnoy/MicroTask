@@ -1,7 +1,11 @@
-export function Header() {
+type BodyPropsType={
+    titleForBody:string
+}
+
+export function Body(props:BodyPropsType) {
     return (
-        <>
-            Header
-        </>
+        <div>
+            {props.titleForBody}
+        </div>
     );
 }

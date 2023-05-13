@@ -1,7 +1,11 @@
-export function Header() {
+type FooterPropsType={
+    titleForFooter:string
+}
+
+export function Footer(props:FooterPropsType) {
     return (
      <div>
-         Header
+         {props.titleForFooter}
      </div>
     );
 }
