@@ -3,22 +3,18 @@ import './App.css';
 
 function App() {
     let [a, setA] = useState(1);
-
-    const OnClickHandler = () => {
+    const OnclickHandler = () => {
         setA(a += 1);
         console.log(a);
     };
-
-    const OnClickHandlerDoZero = () => {
-        setA(a= 0);
-
-        console.log(a);
-    };
+    const OnclickDoZero=()=>{
+        setA(a= 0)
+    }
     return (
         <div>
             <h1>{a}</h1>
-            <button onClick={OnClickHandler}>number+1</button>
-            <button onClick={OnClickHandlerDoZero}>0</button>
+            <button onClick={OnclickHandler}>+1</button>
+            <button onClick={OnclickDoZero}>0</button>
         </div>
     );
 }
