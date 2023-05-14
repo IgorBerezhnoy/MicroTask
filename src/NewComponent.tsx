@@ -1,24 +1,35 @@
-type NewComponentPropsType = {
-    students: Array<StudentsPropsType>
-}
-type StudentsPropsType = {
-    id: number
-    name: string
-    age: number
-}
+import React from 'react';
+import {FilterType} from './App';
 
-export const NewComponent = (props: NewComponentPropsType) => {
+type PropsType = {
+    currentMoney: Array<CurrentMoneyType>
+    onclickFilterHandler:(nameButton: FilterType)=>void
+}
+export type CurrentMoneyType = {
+    banknote: 'dollar' | 'ruble'
+    nominal: number
+    number: string
+}
+export const NewComponent = (props: PropsType) => {
     return (<div>
-        <ul>
-            {props.students.map((objectFromStudentsArray) => {
-              debugger
-                return (
-                    <li key={objectFromStudentsArray.id}>
-                        <span>{objectFromStudentsArray.name}</span>
-                        <span> age: {objectFromStudentsArray.age}</span>
-                        </li>
-                );
-            })}
-        </ul>
+        <>
+            <ul>
+                {props.currentMoney.map((objFromArr, index) => {
+                        return (
+                            <li key={index}>
+                                <span>{objFromArr.banknote}</span>
+                                <span>{objFromArr.nominal}</span>
+                                <span>{objFromArr.number}</span>
+                            </li>
+                        );
+                    }
+                )}
+            </ul>
+            <div style={{marginLeft: '35px'}}>
+                <button onClick={() => props.onclickFilterHandler('all')}>all</button>
+                <button onClick={() => props.onclickFilterHandler('ruble')}>Rubles</button>
+                <button onClick={() => props.onclickFilterHandler('dollar')}>Dollars</button>
+            </div>
+        </>
     </div>);
 };
