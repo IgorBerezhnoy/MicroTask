@@ -1,36 +1,44 @@
 import React, {useState} from 'react';
 import './App.css';
-import {CurrentMoneyType, NewComponent} from './NewComponent';
+import {FullInput} from './components/FullInput';
+import {Input} from './components/Input';
+import {Button} from './components/Button';
 
-export type FilterType="all"|"ruble"|"dollar"
+
 function App() {
-    const [money, setMoney] = useState<CurrentMoneyType[]>([
-        {banknote: 'dollar', nominal: 100, number: ' a1234567890'},
-        {banknote: 'dollar', nominal: 50, number: ' z1234567890'},
-        {banknote: 'ruble', nominal: 100, number: ' w1234567890'},
-        {banknote: 'dollar', nominal: 100, number: ' e1234567890'},
-        {banknote: 'dollar', nominal: 50, number: ' c1234567890'},
-        {banknote: 'ruble', nominal: 100, number: ' r1234567890'},
-        {banknote: 'dollar', nominal: 50, number: ' x1234567890'},
-        {banknote: 'ruble', nominal: 50, number: ' v1234567890'},
-    ]);
-    const [filter, setFilter] = useState<FilterType>('all');
+    const [message, setMessage] = useState([
+            {message: 'message1'},
+            {message: 'message2'},
+            {message: 'message3'},
+            {message: 'message4'},
+            {message: 'message5'}
+        ]
+    );
 
-    let currentMoney = money;
+    let [title, setTitle] = useState('');
 
-    if (filter === 'ruble') {
-        currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble');
-    } else if (filter === 'dollar') {
-        currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'dollar');
-    }
+  /*  const addNewMessage = (title: string) => {
+        let newMessage = {message: title};
+        setMessage([newMessage, ...message]);
+    };*/
 
-    const onclickFilterHandler = (nameButton: FilterType) => {
-        setFilter(nameButton);
+    const ButtonHandler = () => {
+        let newMessage = {message: title};
+        setMessage([newMessage, ...message]);
+        setTitle('');
     };
 
     return (
-<NewComponent currentMoney={currentMoney}
-              onclickFilterHandler={onclickFilterHandler}/>
+        <div className="App">
+            <Input setTitle={setTitle} title={title}/>
+            <Button name={'+'} callBack={ButtonHandler}/>
+            {/* <FullInput addNewMessage={addNewMessage}/>*/}
+            {message.map((el, index) => {
+                return (
+                    <div key={index}>{el.message}</div>
+                );
+            })}
+        </div>
     );
 }
 
