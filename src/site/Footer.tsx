@@ -1,7 +1,10 @@
-export function Header() {
-    return (
-     <div>
-         Header
-     </div>
-    );
+type FooterType={
+    titleForFooter:string
+}
+
+export const Footer=(props:FooterType)=>{
+    return(<div>
+            {props.titleForFooter}
+        </div>
+    )
 }
