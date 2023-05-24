@@ -1,33 +1,25 @@
-import React, {MouseEvent} from 'react';
+import React, {MouseEvent, useState} from 'react';
 import './App.css';
-import {Header} from './site/Header';
-import {Body} from './site/Body';
-import {Footer} from './site/Footer';
-import {NewComponent} from './NewComponent';
-import {Button} from './components/Button';
+
 
 function App() {
-    const Button1Foo = (name: string, age: number, address: string) => {
-        console.log('I am ' + name + ' ' + age + ' ' + address);
+
+    //let a = 1;
+let [a, setA]=useState(1)
+    const onClickHandler = () => {
+       setA( a += 1)
+        console.log(a);
     };
-    const Button2Foo = (name: string, age: number) => {
-        console.log('I am ' + name + ' ' + age);
+const onclickZero = () => {
+       setA( a = 0)
+        console.log(a);
     };
-    const stupidButton=(some:string)=>{
-        console.log(some);
-    }
-    /*
-    const Button2Foo = () => {
-        console.log("I am ");
-    }
-    */
 
     return (
         <div className="App">
-            <Button title={'MyYouTubeChanel-1'} callBack={() => Button1Foo('Vasya', 21, 'live in minsk')}/>
-            <Button title={'MyYouTubeChanel-2'} callBack={() => Button2Foo('Ivan', 2)}/>
-            <Button title={'I am stupid button'} callBack={() => stupidButton('I am a stupid button')}/>
-
+            <h1>{a}</h1>
+            <button onClick={onClickHandler}>number</button>
+            <button onClick={onclickZero}>0</button>
         </div>
     );
 }

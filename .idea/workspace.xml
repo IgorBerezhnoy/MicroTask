@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1fa3521-4641-46ae-af23-7a1a8beddbbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
@@ -77,7 +76,7 @@
       <workItem from="1684860993920" duration="121000" />
       <workItem from="1684861125010" duration="129000" />
       <workItem from="1684861262663" duration="2890000" />
-      <workItem from="1684906770424" duration="8413000" />
+      <workItem from="1684906770424" duration="10789000" />
     </task>
     <task id="LOCAL-00001" summary="finished task map">
       <created>1683984846294</created>
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684910050415</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finished lesson 3. Task with button">
+      <created>1684924951285</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684924951285</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +167,7 @@
     <MESSAGE value="finished task for input" />
     <MESSAGE value="finished lesson 1. Task with Components and props" />
     <MESSAGE value="finished lesson 2. Task with map" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 2. Task with map" />
+    <MESSAGE value="finished lesson 3. Task with button" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 3. Task with button" />
   </component>
 </project>
