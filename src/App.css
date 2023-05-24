@@ -1,9 +1,24 @@
-table {
-    border-collapse: collapse; /* объединение граничных линий */
-    border: 2px solid black; /* толщина и цвет границы */
+.App {
+  padding: 30px;
+  display: flex;
 }
 
-td {
-    border: 1px dotted red; /* толщина, стиль и цвет границы ячейки */
-    padding: 10px;
+.App > div {
+  margin-right: 50px;
+}
+
+.error {
+  border: red 1px solid;
+}
+
+.error-message {
+  color: red;
+}
+
+.active-filter {
+  background-color: aquamarine;
+}
+
+.is-done {
+  opacity: 0.5;
 }

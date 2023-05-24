@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1fa3521-4641-46ae-af23-7a1a8beddbbf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/Body.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/Header.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +75,23 @@
       <recent name="D:\programing_2.0\microTask\my-app\src\site" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +106,8 @@
       <workItem from="1684860993920" duration="121000" />
       <workItem from="1684861125010" duration="129000" />
       <workItem from="1684861262663" duration="2890000" />
-      <workItem from="1684906770424" duration="10789000" />
+      <workItem from="1684906770424" duration="11136000" />
+      <workItem from="1684935270769" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="finished task map">
       <created>1683984846294</created>
@@ -141,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684924951285</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="finished lesson 4. Task with useState">
+      <created>1684935001747</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684935001747</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +206,7 @@
     <MESSAGE value="finished lesson 1. Task with Components and props" />
     <MESSAGE value="finished lesson 2. Task with map" />
     <MESSAGE value="finished lesson 3. Task with button" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 3. Task with button" />
+    <MESSAGE value="finished lesson 4. Task with useState" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 4. Task with useState" />
   </component>
 </project>

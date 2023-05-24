@@ -1,26 +1,55 @@
-import React, {MouseEvent, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-
+import {NewComponent} from './NewComponent';
+export type FilterType="all"|"dollar"|"ruble"
 
 function App() {
+    const [money, setMoney] = useState([
+        {banknote: 'dollar', nominal: 100, number: ' a1234567890'},
+        {banknote: 'dollar', nominal: 50, number: ' z1234567890'},
+        {banknote: 'ruble', nominal: 100, number: ' w1234567890'},
+        {banknote: 'dollar', nominal: 100, number: ' e1234567890'},
+        {banknote: 'dollar', nominal: 50, number: ' c1234567890'},
+        {banknote: 'ruble', nominal: 100, number: ' r1234567890'},
+        {banknote: 'dollar', nominal: 50, number: ' x1234567890'},
+        {banknote: 'ruble', nominal: 50, number: ' v1234567890'},
+    ]);
 
-    //let a = 1;
-let [a, setA]=useState(1)
-    const onClickHandler = () => {
-       setA( a += 1)
-        console.log(a);
-    };
-const onclickZero = () => {
-       setA( a = 0)
-        console.log(a);
-    };
+const [filter, setFilter]=useState<FilterType>("all")
+    let currentMoney = money;
+
+    if (filter == 'dollar') {
+        currentMoney = money.filter(el => el.banknote == 'dollar');
+
+    }
+    if (filter == 'ruble') {
+        currentMoney = money.filter(el => el.banknote == 'ruble');
+
+
+    }
+    function  onClickFilterHandler(nameButton: FilterType) {
+        setFilter(nameButton)
+        }
+
 
     return (
-        <div className="App">
-            <h1>{a}</h1>
-            <button onClick={onClickHandler}>number</button>
-            <button onClick={onclickZero}>0</button>
-        </div>
+        <>
+            {/*<ul>
+                {currentMoney.map((el, index) => <li key={index}>
+                    <span> {el.banknote} </span>
+                    <span> {el.nominal} </span>
+                    <span> {el.number} </span>
+                </li>)}
+            </ul>
+            <div style={{marginLeft: '35px'}}>
+                <button onClick={() => onClickFilterHandler('all')}>all</button>
+                <button onClick={() => onClickFilterHandler('ruble')}>rubles</button>
+                <button onClick={() => onClickFilterHandler('dollar')}>dollars</button>
+            </div>*/}
+            <NewComponent currentMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+        </>
+
+
     );
 }
 
