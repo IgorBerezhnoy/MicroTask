@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1fa3521-4641-46ae-af23-7a1a8beddbbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NewComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,7 @@
       <workItem from="1684860993920" duration="121000" />
       <workItem from="1684861125010" duration="129000" />
       <workItem from="1684861262663" duration="2890000" />
-      <workItem from="1684906770424" duration="3070000" />
+      <workItem from="1684906770424" duration="8413000" />
     </task>
     <task id="LOCAL-00001" summary="finished task map">
       <created>1683984846294</created>
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684863455639</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finished lesson 2. Task with map">
+      <created>1684910050415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684910050415</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +160,7 @@
     <MESSAGE value="finished task for filter" />
     <MESSAGE value="finished task for input" />
     <MESSAGE value="finished lesson 1. Task with Components and props" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 1. Task with Components and props" />
+    <MESSAGE value="finished lesson 2. Task with map" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 2. Task with map" />
   </component>
 </project>
