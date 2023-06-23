@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b1fa3521-4641-46ae-af23-7a1a8beddbbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullInput.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +102,10 @@
       <workItem from="1684861262663" duration="2890000" />
       <workItem from="1684906770424" duration="11136000" />
       <workItem from="1684935270769" duration="4926000" />
+      <workItem from="1687437175559" duration="196000" />
+      <workItem from="1687437390320" duration="13000" />
+      <workItem from="1687437429191" duration="1201000" />
+      <workItem from="1687501245900" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="finished task map">
       <created>1683984846294</created>
@@ -165,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684935001747</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="merge branch">
+      <created>1685518309421</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685518309421</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +212,7 @@
     <MESSAGE value="finished lesson 2. Task with map" />
     <MESSAGE value="finished lesson 3. Task with button" />
     <MESSAGE value="finished lesson 4. Task with useState" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished lesson 4. Task with useState" />
+    <MESSAGE value="merge branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge branch" />
   </component>
 </project>
